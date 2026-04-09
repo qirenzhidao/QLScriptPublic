@@ -117,7 +117,7 @@ class Task {
         let { data: result } = await axios.request(options);
         if (result?.code == '200') {
             //打印签到结果
-            $.log(`🌸账号[${this.index}]` + `🕊当前已签到${result.body.signDaysCountMod}天🎉`);
+            $.log(`🌸账号[${this.index}]` + `签到成功🎉`);
         } else {
             $.log(`🌸账号[${this.index}] 签到-失败:${JSON.stringify(result)}❌`)
         }
