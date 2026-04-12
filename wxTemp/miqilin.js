@@ -6,9 +6,9 @@
 cron: 30 9 * * *
 ------------------------------------------
 #Notice:   
-谢瑞麟 微信小程序 签到得积分 
+米其林会员 每日任务
 WeChatCodeServer 填写wx_server_url wx_auth 用于获取code 
-变量名称：tslj
+变量名称：miqilin
 ⚠️【免责声明】
 ------------------------------------------
 1、此脚本仅用于学习研究，不保证其合法性、准确性、有效性，请根据情况自行判断，本人对此不承担任何保证责任。
@@ -251,7 +251,6 @@ class Task {
     if (process.env['wx_server_url'] && process.env['wx_auth']) {
         $.userList = ['test']
     }
-    $.userList = ['test']
     for (let user of $.userList) {
         await new Task(user).run();
     }
