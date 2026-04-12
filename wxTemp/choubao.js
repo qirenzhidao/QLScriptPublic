@@ -209,7 +209,7 @@ class Task {
     await getNotice()
     $.checkEnv(ckName);
     if (process.env['wx_server_url'] && process.env['wx_auth']) {
-        $.userList = 'test'
+       $.userList = ['test']
     }
     for (let user of $.userList) {
         await new Task(user).run();
